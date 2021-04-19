@@ -26,10 +26,10 @@ router.get("/facebuk", (req, res, next) => {
      
       // With populate it basically will 
        /*
-       1. grab the value of that key, in our case "myUserId" , 
-       2. look for the schema and see if has been refernced
-       3. Find a value in that model same as the  value of "myUserId"
-       4. and finnaly will popualte the result in the"myUserId" value itself
+       1. grab the value of that key, in our case "userId" , 
+       2. look for the schema and see if has been referenced
+       3. Find a value in that model same as the  value of "userId"
+       4. and finnaly will popualte the result in the "userId" value itself
       */
       PostModel.find()
         .populate('userId')
